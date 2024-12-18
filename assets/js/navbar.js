@@ -1,16 +1,9 @@
 const nav = document.querySelector(".navbar");
 
-let tDot = document.title;
-if (tDot.includes(':')) {
-  tDot = "..";
-} else {
-  tDot = ".";
-}
-
 nav.innerHTML = `
-	<div class="container-fluid pt-2 pb-2 px-3">
-		<a class="navbar-brand" href="https://aydavidttg.com.ng">
-			<span><img src="${tDot}/assets/img/logo.png"></span>
+	<div class="container-fluid pt-2 pb-2">
+		<a class="navbar-brand" href="https://aydavidttg.github.io/thecreatieayd">
+			<span><img src="./assets/img/logo.png"></span>
 		</a>
 		<button
 			class="navbar-toggler"
@@ -24,34 +17,40 @@ nav.innerHTML = `
 			<span class="material-icons mi-24">menu</span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mx-0 mx-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="${tDot}/index.html">Home</a>
+			<ul class="navbar-nav ms-0 ms-auto">
+				<li class="nav-item my-auto">
+					<a class="nav-link" href="./index.html">Home</a>
 				</li>
-				<!--li class="nav-item submenu">
+				<li class="nav-item submenu my-auto">
 					<span class="nav-link dropdown-btn">
-						<span class="txt">Graphics Design</span>
+						<span class="txt">Services</span>
 						<span class="material-icons mi-24 drop-icon">expand_more</span>
 					</span>
 					<ul class="dropdown-content m-auto">
-						<li><a class="submenu-item" href="./designs.html">Designs</a></li>
-						<li><a class="submenu-item" href="./resources.html">Resources</a></li>
-						<li>
-							<a class="submenu-item" href="./fsgdc.html">FSGDC with PixelLab</a>
-						</li>
+						<li><a class="submenu-item" href="#">Graphics Design</a></li>
+						<li><a class="submenu-item" href="#">Web Development</a></li>
 					</ul>
-				</li-->
-				<li class="nav-item">
-					<a class="nav-link" href="${tDot}/designs.html">Designs</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="${tDot}/webdev-projects.html">Web Dev Projects</a>
+				<li class="nav-item my-auto">
+					<a class="nav-link" href="./designs.html">Our Works</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="${tDot}/posts.html">Posts</a>
+                <li class="nav-item submenu my-auto">
+					<span class="nav-link dropdown-btn">
+						<span class="txt">Learn</span>
+						<span class="material-icons mi-24 drop-icon">expand_more</span>
+					</span>
+					<ul class="dropdown-content m-auto">
+                        <li><a class="submenu-item" href="#">All Tutorials</a></li>
+						<li><a class="submenu-item" href="#">HTML & CSS</a></li>
+						<li><a class="submenu-item" href="#">JavaScript</a></li>
+                        <li><a class="submenu-item" href="#">Graphics Design<br> with PixelLab</a></li>
+					</ul>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link ct" href="${tDot}/connect.html">Connect</a>
+				<li class="nav-item my-auto">
+					<a class="nav-link" href="./blog.html">Blog</a>
+				</li>
+				<li class="nav-item ct my-auto">
+					<a class="nav-link ct btn" href="./contact-us.html">Contact Us</a>
 				</li>
 			</ul>
 		</div>

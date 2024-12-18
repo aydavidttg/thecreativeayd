@@ -1,210 +1,83 @@
 /* Service Card */
 
 .service-card {
-	background-color: #ffffff;
+	background-color: var(--col2);
 	border-radius: 7px;
 	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-	margin-bottom: 35px;
-	padding: 12px 16px;
+	margin: 0 21px 35px 21px;
+	padding: 16px 24px;
 	text-align: center;
+    width: 40%;
 }
 
 .service-card:hover {
 	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
-	transition-duration: 0.3s;
+    margin: -5px 21px 40px 21px;
+	transition-duration: 0.5s;
 }
 
-.service-card img {
-	height: 144px;
-	width: auto;
+/* Work Card */
+
+.work-card {
+    margin: 0 24px;
 }
 
-/* Project Cards */
-
-.project-card {
-	background-color: white;
-	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-	border: none;
-	border-radius: 7px;
-	margin-bottom: 21px;
-	padding: 12px 5px 24px 12px;
+.work-card img {
+    width: 100%;
 }
 
-.project-card img {
-	height: 144px;
-	width: auto;
+.work-card p {
+    color: var(--col4);
 }
 
-.project-card h5,
-.project-card a {
-	font-family: var(--font2);
-	font-weight: 600;
-	margin-left: 16px;
+/* Course Card */
+
+.course-card {
+    background-color: var(--col7);
+    color: var(--col5);
+    border-radius: 16px;
+    padding: 0 0 8px 0;
 }
 
-.project-card h5 {
-	color: var(--col3);
+.course-card img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
 }
 
-.project-card:hover {
-	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
-	margin-top: -10px;
-	transition-duration: 0.1s;
+.course-card h4 {
+    margin-bottom: 5px;
 }
 
-/* Lit Cards */
-
-.lit-card {
-	background-color: white;
-	border-radius: 37px;
-	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-	display: flex;
-	margin: 0 10px 30px 10px;
-	padding: 10px 28px;
-	width: max-content;
-	cursor: pointer;
+.course-card .small {
+    border-radius: 5px;
+    background-color: var(--col3);
+    padding: 0 5px;
+    width: max-content;
+    letter-spacing: 1px;
 }
 
-.lit-card .material-icons {
-	font-size: 35px;
+/* Blog Card */
+
+.blog-card {
+    color: var(--col5);
+    border-radius: 16px;
+    padding: 0 0 8px 0;
 }
 
-.lit-card .pyb-text {
-	font-family: var(--font2);
-	font-size: 19px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	margin: 3px 0 0 3px;
+.blog-card img {
+    border-radius: 16px;
+    width: 100%;
 }
 
-/* Other Pages */
-
-/* Design Card, Res Card, Post Card */
-
-.design-card, .res-card {
-	background-color: var(--col2);
-	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-	border: none;
-	border-radius: 7px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 24px;
-	padding: 21px 14px;
-	width: max-content;
+.blog-card h4,
+.blog-card p {
+    color: var(--col7);
+    margin-bottom: 1px;
 }
 
-.design-card img, .res-card img {
-	border-radius: 5px;
-	height: 210px;
-	width: auto;
-	padding-bottom: 7px;
+.blog-card .btn--3 {
+    padding: 8px 18px;
+    width: max-content;
 }
 
-.design-card p, .res-card p {
-	color: var(--col1);
-}
-
-.design-card a {
-	font-family: var(--font2);
-	width: 90%;
-}
-
-/* Website Template Card */
-
-.web-temp-card {
-	background-color: white;
-	color: #3e3e43;
-	border-radius: 12px;
-	box-shadow: 0 0 15px #3e3e43;
-	padding: 15px 28px;
-}
-
-.web-temp-card img {
-	width: 840px;
-	height: auto;
-}
-
-.web-temp-card h3 {
-	font-family: "Work Sans", sans-serif;
-}
-
-.web-temp-card p {
-	font-family: "Mulish", sans-serif;
-}
-
-@media screen and (min-width: 751px) {
-	.web-temp-card {
-		display: flex;
-		flex-direction: row;
-	}
-	
-	.web-temp-card .rhs {
-		padding-left: 16px;
-	}
-}
-
-@media screen and (max-width: 750px) {
-	.web-temp-card .lhs, .web-temp-card .rhs {
-		padding-bottom: 24px;
-	}
-}
-
-@media screen and (max-width: 558px) {
-	.web-temp .row-main {
-		margin: 0 24px;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.web-temp .row-main {
-		margin: 0 10px;
-	}
-}
-
-/* Res Card */
-
-.res-card .icon {
-	height: 40px;
-	width: auto;
-}
-
-/* Post Card */
-
-.post-card {
-	display: flex;
-	flex-direction: row;
-}
-
-@media screen and (min-width: 993px) {
-	.post-card img {
-		width: 480px;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.post-card img {
-		width: 320px;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 772px) {
-	.post-card {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.post-card img {
-		width: 80%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 486px) {
-	.post-card img {
-		width: 97%;
-		height: auto;
-	}
-}
