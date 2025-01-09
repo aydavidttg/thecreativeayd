@@ -7,7 +7,26 @@
 	margin: 0 21px 35px 21px;
 	padding: 16px 24px;
 	text-align: center;
-    width: 40%;
+}
+
+@media screen and (min-width: 454px) {
+	.div-sc {
+		flex-direction: row;
+	}
+    
+    .service-card {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 453px) {
+    .div-sc {
+		flex-direction: column;
+	}
+    
+	.service-card {
+		width: 63%;
+	}
 }
 
 .service-card:hover {
@@ -16,27 +35,53 @@
 	transition-duration: 0.5s;
 }
 
-/* Work Card */
+/* Design Card */
 
-.work-card {
+.design-card {
+    border-radius: 12px;
+    display: flex;
     margin: 0 24px;
+    width: 270px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
-.work-card img {
+.design-card img {
+    border-radius: 12px;
     width: 100%;
 }
 
-.work-card p {
+.design-card p {
     color: var(--col4);
 }
 
-/* Course Card */
+
+/* Web Card */
+
+.web-card {
+    background-color: var(--col5);
+    border-radius: 12px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    padding: 7px 12px 24px 12px;
+}
+
+.web-card:hover {
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+	transition-duration: 0.5s;
+}
+
+.web-card img {
+    height: 120px;
+    width: auto;
+}
+
+/* Course Card ................ */
 
 .course-card {
     background-color: var(--col7);
     color: var(--col5);
     border-radius: 16px;
     padding: 0 0 8px 0;
+    margin-bottom: 40px;
 }
 
 .course-card img {
@@ -63,6 +108,7 @@
     color: var(--col5);
     border-radius: 16px;
     padding: 0 0 8px 0;
+    margin-bottom: 40px;
 }
 
 .blog-card img {
@@ -81,3 +127,20 @@
     width: max-content;
 }
 
+/* Card 2 */
+
+.card--2 {
+    background-color: var(--col2);
+	border-radius: 7px;
+	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+	margin: 0 21px 35px 21px;
+	padding: 16px 24px;
+	text-align: center;
+    width: 93%;
+}
+
+.card--2:hover {
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+    margin: -5px 21px 40px 21px;
+	transition-duration: 0.5s;
+}

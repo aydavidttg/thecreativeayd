@@ -27,14 +27,14 @@ nav.innerHTML = `
 						<span class="material-icons mi-24 drop-icon">expand_more</span>
 					</span>
 					<ul class="dropdown-content m-auto">
-						<li><a class="submenu-item" href="#">Graphics Design</a></li>
-						<li><a class="submenu-item" href="#">Web Development</a></li>
+						<li><a class="submenu-item" href="graphic-design.html">Graphic Design</a></li>
+						<li><a class="submenu-item" href="web-dev.html">Web Development</a></li>
 					</ul>
 				</li>
 				<li class="nav-item my-auto">
-					<a class="nav-link" href="./designs.html">Our Works</a>
+					<a class="nav-link" href="our-works.html">Our Works</a>
 				</li>
-                <li class="nav-item submenu my-auto">
+                <!--li class="nav-item submenu my-auto">
 					<span class="nav-link dropdown-btn">
 						<span class="txt">Learn</span>
 						<span class="material-icons mi-24 drop-icon">expand_more</span>
@@ -45,7 +45,7 @@ nav.innerHTML = `
 						<li><a class="submenu-item" href="#">JavaScript</a></li>
                         <li><a class="submenu-item" href="#">Graphics Design<br> with PixelLab</a></li>
 					</ul>
-				</li>
+				</li-->
 				<li class="nav-item my-auto">
 					<a class="nav-link" href="./blog.html">Blog</a>
 				</li>
@@ -56,3 +56,10 @@ nav.innerHTML = `
 		</div>
 	</div>
     `;
+
+
+   
+   
+   
+   
+   

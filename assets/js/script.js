@@ -34,26 +34,6 @@ for (let i = 0; i < dropdown.length; i++) {
 	});
 }
 
-/* Lit Card */
-
-const litCard = document.querySelectorAll(".pyb-projects .lit-card");
-
-for (let i = 0; i < litCard.length; i++) {
-	litCard[i].addEventListener("click", () => {
-		window.location.href = litCard[i].getAttribute('link');
-	});
-
-	litCard[i].addEventListener("mouseover", () => {
-		litCard[i].style.backgroundColor = "#3e3e43";
-		litCard[i].style.color = "#ffffff";
-	});
-
-	litCard[i].addEventListener("mouseleave", () => {
-		litCard[i].style.backgroundColor = "#ffffff";
-		litCard[i].style.color = "#3e3e43";
-	});
-}
-
 /* WhatsApp Quick Contact Hover */
 
 const waQc = document.querySelector(".wa-qc");

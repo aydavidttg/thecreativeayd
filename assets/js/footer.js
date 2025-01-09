@@ -5,7 +5,7 @@ footer.innerHTML = `
         <div class="row pb-4">
             <div class="col-lg-5 col-md-12 text">
                 <a class="navbar-brand" href="https://aydavidttg.github.io/thecreatieayd">
-                    <span><img src="./assets/img/logo.png"></span>
+                    <span><img src="./assets/img/logo3.png"></span>
                 </a>
                 <p>
                     TheCreativeAyd is a graphics and web designing company dedicated to helping individuals and businesses communicate their values through visually appealing designs.
@@ -14,7 +14,7 @@ footer.innerHTML = `
 
             <div class="col-lg-2 col-md-6">
                 <h5>Links</h5>
-                <ul class="list-unstyled mb-0">
+                <ul class="list-unstyled mb-3">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -57,3 +57,9 @@ footer.innerHTML = `
         >
     </div>   
     `;
+
+
+   
+       
+       
+       

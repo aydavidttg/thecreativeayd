@@ -1,5 +1,6 @@
 .hero-btn, 
-.btn--2 {
+.btn--2, 
+.btn--4 {
     background-color: var(--col1);
     color: var(--col5);
     padding: 10px 21px;
@@ -46,4 +47,20 @@
     background-color: var(--col4);
     color: var(--col5);
     transition: 0.35s;
+}
+
+.btn--4 {
+    background-color: #d33d0300;
+    color: #d33d03;
+    border: solid 1px #d33d03; 
+    font-size: 16px;
+}
+
+.btn--4:hover {
+    background-color: var(--col1);
+    color: var(--col5);
+}
+
+.web-card .btn {
+    font-family: var(--font2);
 }

@@ -53,6 +53,21 @@ a {
     padding-right: 63px;
 }
 
+@media screen and (max-width: 629px) {
+	.navbar .container-fluid {
+        padding-left: 32px;
+        padding-right: 32px;
+	}
+}
+
+@media screen and (max-width: 431px) {
+	.navbar .container-fluid {
+        padding-left: 7px;
+        padding-right: 7px;
+	}
+}
+
+
 .nav-link,
 .navbar-brand {
 	color: var(--col1) !important;
@@ -137,28 +152,94 @@ a {
 	background-color: var(--col2);
 	color: var(--col1);
 	font-family: var(--font1);
-	height: 72vh;
 }
 
 .hero .container-fluid {
-    padding: 0 70px 0 63px;
-}
-
-.hero-lt {
-    padding-top: 100px;
+    padding: 0 54px;
 }
 
 .hero-lt h1 {
-    font-size: 84px;
+    font-size: 68px;
 	font-weight: 600;
 }
 
 .hero-lt h1.second {
-    font-size: 72px;
+    font-size: 57px;
 }
 
 .hero-rt img {
-    width: 87%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1115px) {
+	.hero-lt h1 {
+        font-size: 48px;
+	}
+    
+    .hero-lt h1.second {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+	.hero .row {
+        flex-direction: column-reverse;
+	}
+    
+    .hero-rt img,
+    .hero-lt {
+        width: 90%;
+    }
+    
+    .hero-lt {
+        padding-bottom: 54px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-lt h1 {
+        font-size: 68px;
+	}
+    
+    .hero-lt h1.second {
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 716px) {
+	.hero-lt h1 {
+        font-size: 48px;
+	}
+    
+    .hero-lt h1.second {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 562px) {
+    .hero .container-fluid {
+        padding: 0 21px;
+    }
+    
+    .hero-rt img,
+    .hero-lt {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .hero-rt img,
+    .hero-lt {
+        width: 100%;
+    }
+    
+	.hero-lt h1 {
+        font-size: 32px;
+	}
+    
+    .hero-lt h1.second {
+        font-size: 28px;
+    }
 }
 
 /* SERVICES */
@@ -170,12 +251,55 @@ a {
 .services .lt {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(31, 44, 62, 0.35)),
 		url("../img/techsys.avif");
-    height: 580px;
+/*    height: 580px;*/
 }
 
-.services .lt img {
+.services .lt img:nth-child(1) {
     width: 18%;
     padding-top: 63px;
+}
+
+.services .rt {
+    padding-top: 63px;
+}
+
+@media screen and (max-width: 991px) {
+	.services .lt img:nth-child(1) {
+        padding-left: 24px;
+        padding-top: 114px;
+		width: 12%;
+	}
+}
+
+@media screen and (min-width: 881px) {
+	.services .lt img:nth-child(2) {
+        display: none;
+	}
+}
+
+@media screen and (max-width: 880px) {
+    .services .lt {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 40px 0;
+    }
+    
+	.services .lt img:nth-child(1) {
+        display: none;
+	}
+    
+    .services .lt img:nth-child(2) {
+        border-radius: 24px;
+        width: 72%;
+	}
+    
+    .services .rt {
+        padding-top: 0px;
+    }
 }
 
 /* RECENT WORKS */
@@ -189,7 +313,7 @@ a {
 /* LATEST POSTS */
 
 .blog {
-    background-color: var(--col2);
+    background-color: var(--col5);
 }
 
 /* WhatsApp Quick Contact */
@@ -218,25 +342,24 @@ div.wa-qc i {
 /* Footer */
 
 footer {
-	background-color: #1d1d1d;
-	color: var(--col1);
+	background-color: var(--col1);
+	color: var(--col5);
 }
 
 footer p,
 footer ul li a,
 footer .social a i {
 	font-family: var(--font2);
-    color: var(--col6);
+    color: var(--col5);
 }
 
 footer ul li a:hover {
-    color: var(--col1);
-	text-decoration: underline solid 1px var(--col1);
+	text-decoration: underline solid 1px var(--col5);
     transition: 0.5s;
 }
 
 footer .social a i:hover {
-    color: var(--col1);
+    color: var(--col4);
     transition: 0.5s;
 }
 
@@ -246,13 +369,20 @@ footer hr {
 
 .copyright,
 .copyright a{
-    color: var(--col1);
+    color: var(--col5);
 	font-family: var(--font1);
 }
+
+/* Plus ...... */
 
 .hidden {
 	display: none;
 }
+
+.bg-orange2 {
+    background-color: var(--col2) !important;
+}
+
 
 /* Style - navbarToggler Appearance */
 
@@ -263,6 +393,10 @@ footer hr {
 
 	.nav-link {
 		padding-left: 10px;
+	}
+    
+    .nav-item {
+		padding-bottom: 7px;
 	}
 }
 
